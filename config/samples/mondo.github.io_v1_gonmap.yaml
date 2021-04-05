@@ -1,0 +1,12 @@
+apiVersion: mondo.github.io.clobaa/v1
+kind: GonMap
+metadata:
+  name: gonmap-sample
+namespaceSelector:
+  matchLabels:
+    bar: baz
+  # To inject in all the namespaces
+  # matchLabels: {}
+data:
+  # Add fields here
+  foo: bar
