@@ -1,0 +1,24 @@
+# permissions for end users to edit gonmaps.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: gonmap-editor-role
+rules:
+- apiGroups:
+  - mondo.github.io.clobaa
+  resources:
+  - gonmaps
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - mondo.github.io.clobaa
+  resources:
+  - gonmaps/status
+  verbs:
+  - get

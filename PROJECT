@@ -1,0 +1,7 @@
+domain: clobaa
+repo: gonmap
+resources:
+- group: mondo.github.io
+  kind: GonMap
+  version: v1
+version: "2"
